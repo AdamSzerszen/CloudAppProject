@@ -1,0 +1,32 @@
+.top-row {
+    border-top: 3px solid black;
+}
+
+.menu-buttons-container {
+}
+
+.rss-card {
+    font-weight: bold;
+}
+
+.rss-icon {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.svg-icon {
+    max-width: 30px;
+    max-height: 30px;
+    margin: 30px;
+}
+
+.footer-bar {
+    background: #0A2A4A;
+    margin: 20px 30px;
+}
+
+.menu-button {
+    max-width: 120px;
+    max-height: 40px;
+    margin: 3px;
+}

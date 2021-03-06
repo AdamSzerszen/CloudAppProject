@@ -2,13 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test App</title>
+    <title>Rss App</title>
     <link rel="stylesheet" href="../Styles/Styles.css">
     <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
     <script src="../Scripts/Scripts.js"></script>
     <script src="../Bootstrap/js/bootstrap.bundle.js"></script>
 </head>
 <body>
-<button type="button" class="btn btn-success">Success</button>
+<div class="container">
+    <nav class="top-row navbar navbar-expand navbar-light bg-light shadow p-3 mb-5">
+        <div class="col">
+            <div class="row justify-content-start">
+                <div class="col-3">
+                    <img src="../Resources/SVG/rss-feed-button.svg" class="rss-icon" alt="RSS">
+                    <span>Feedmail</span>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row justify-content-end">
+                <div class="col-5">
+                    <button type="button" class="menu-button btn btn-primary btn-sm">Save</button>
+                    <button type="button" class="menu-button btn btn-secondary btn-sm">Preview</button>
+                    <button type="button" class="menu-button btn btn-danger btn-sm">Send</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-6">
+            <form>
+                <div class="form-group">
+                    <label for="inputEmail">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                           placeholder="name@example.com">
+                    <textarea class="form-control mt-1" id="contentArea" rows="20"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="col-6">
+            <label for="rssInput">RSS url</label>
+            <div class="input-group mb-3">
+                <input type="text" id="rssInput" class="form-control" placeholder="https://example.site/rss.xml"
+                       aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+            </div>
+            <p class="shadow p-3 mb-5 mt-3 bg-light rss-card">RSS</p>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container footer-bar mt-3">
+        <div class="container" align="center">
+            <img src="../Resources/SVG/facebook.svg" class="svg-icon" alt="Facebook">
+            <img src="../Resources/SVG/twitter-sign.svg" class="svg-icon" alt="Twitter">
+            <img src="../Resources/SVG/linkedin-sign.svg" class="svg-icon" alt="Linkedin">
+        </div>
+    </div>
+</footer>
 </body>
 </html>
